@@ -6,7 +6,7 @@ This documentation is structured to give developers a clear understanding of how
 
 ## **Table of Contents**
 
-1. **Write to Document Types**
+1. **[Write to Document Types](#1\.-Write-to-Document-Types)**
     - System.Drawing Images
     - IronDrawing Images (AnyBitmap)
     - Images (jpg, png, gif, tiff, bmp)

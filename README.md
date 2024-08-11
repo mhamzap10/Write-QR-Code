@@ -12,14 +12,14 @@ This documentation is structured to give developers a clear understanding of how
     - Images (jpg, png, gif, tiff, bmp)
     - Stream (MemoryStream, byte\[\])
     - PDF (Stamp on Existing PDF)
-2. **Encoding Data in QR Codes**
+2. **[Encoding Data in QR Codes](#2-Encoding-Data-in-QR-Codes)**
     - Text, URLs, Bytes, and Numbers
-3. **Styling QR Codes**
+3. **[Styling QR Codes](#3-Styling-QR-Codes)**
     - Resizing
     - Margins & Borders
     - Recoloring
     - Adding Logos to QR Codes
-4. **Checking Fault Tolerance**
+4. **[Checking Fault Tolerance](#4-Checking-Fault-Tolerance)**
     - Choosing QR Version
     - QR Error Correction
     - Null Checking
@@ -95,7 +95,7 @@ The '**StampToExistingPdfPage**' method in IronQR allows you to embed a QR code 
 ![image](https://github.com/user-attachments/assets/affe6e51-3aa9-4020-9a7a-606717de6307)
 
 
-## **2\. Encoding Data in QR Codes**
+## **2. Encoding Data in QR Codes**
 
 IronQR supports encoding a variety of data types into QR codes, including text, URLs, byte arrays, and numerical values.
 
@@ -116,7 +116,7 @@ QrCode qrCode = QrWriter.Write(binaryData);
  - **Numbers:** Numerical data can be encoded efficiently, making QR codes ideal for serial numbers, IDs, or other numeric information:  
     QrCode qrCode = QrWriter.Write("1234567890");
 
-## **3\. Styling QR Codes**
+## **3. Styling QR Codes**
 
 To customize the appearance of your QR code, you can use the QrStyleOptions class provided by IronQR. This class allows you to adjust various aspects of the QR code, such as dimensions, margins, colors, and even adding a logo to the center of the QR code.
 
@@ -155,7 +155,7 @@ qrImage.SaveAs("qrImage.png");
 ![image](https://github.com/user-attachments/assets/4ae736ac-b225-419a-b5c9-fcd567580c32)
 
 
-## **4\. Checking Fault Tolerance**
+## **4. Checking Fault Tolerance**
 
 QR codes include error correction capabilities, which allow them to be scanned even if part of the code is damaged or obscured. IronQR provides QrOptions class to check and manage these capabilities.
 

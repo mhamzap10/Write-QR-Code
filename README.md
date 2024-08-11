@@ -129,34 +129,25 @@ using IronSoftware.Drawing;
 QrCode qrCode = QrWriter.Write("1234567890");
 
 QrStyleOptions style = new QrStyleOptions
-
 {
 
-Dimensions = 300, // px
+    Dimensions = 300, // px
+    Margins = 10, // px
+    Color = Color.Gray,
+    Logo = new QrLogo
+    {
+        Bitmap = new AnyBitmap("logo.png"),
+        Width = 100,
+        Height = 100,
+        CornerRadius = 2
 
-Margins = 10, // px
-
-Color = Color.Gray,
-
-Logo = new QrLogo
-
-{
-
-Bitmap = new AnyBitmap("logo.png"),
-
-Width = 100,
-
-Height = 100,
-
-CornerRadius = 2
-
-}
-
+    }
 };
 
 AnyBitmap qrImage = qrCode.Save(style);
 
 qrImage.SaveAs("qrImage.png");
+
 ```
 
 **'QrStyleOptions'** in IronQR is a configuration class that allows customization of a QR code's visual appearance. It includes properties like Dimensions to set the QR code size, Margins for spacing around the code, Color for the QR code's color, and Logo to embed an image, such as a company logo, within the QR code. This enables users to create branded or aesthetically customized QR codes.

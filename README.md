@@ -6,7 +6,7 @@ This documentation is structured to give developers a clear understanding of how
 
 ## **Table of Contents**
 
-1. **[Write to Document Types](#1\.-Write-to-Document-Types)**
+1. **[Write to Document Types](#1-Write-to-Document-Types)**
     - System.Drawing Images
     - IronDrawing Images (AnyBitmap)
     - Images (jpg, png, gif, tiff, bmp)
@@ -34,7 +34,7 @@ Use the following command to install the IronQR Library
 Install-Package IronOcr
 ```
 
-## **1\. Write to Document Types**
+## **1 Write to Document Types**
 
 IronQR allows QR codes to be written to various document types, including popular image formats, PDF documents, and streams. This flexibility ensures that QR codes can be integrated into a wide range of applications.
 

@@ -21,11 +21,11 @@ This documentation is structured to give developers a clear understanding of how
     - Adding Logos to QR Codes
 4. **Checking Fault Tolerance**
     - Choosing QR Version
+    - QR Error Correction
     - Null Checking
     - Checksums
     - Format Awareness
     - Detailed Error Messages
-    - Custom QR Error Correction
 
 ### **Install with NuGet Package Manager Console**
 
